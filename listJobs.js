@@ -7,11 +7,4 @@ Kue.Job.range(0, -1, 'asc', (err, jobs) => { //Here 0 and -1 mean that we need r
     jobs.map(job => {
         console.log(`Job ${job.id}, data: ${job.data}, Status : ${job.state}`);
     })
-    //retrieve list of completed jobs
-    jobs.complete((err, jobs) => {
-        jobs.map(job => {
-            console.log(`Job ${job.id}, data: ${job.data}`);
-        })
-    })
-    //Similarly we can list of active, inactive, delayed, and failed jobs
 })
