@@ -9,8 +9,10 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "express": "^4.16.4",
     "image-downloader": "^3.4.2",
     "kue": "^0.11.6",
-    "readline-sync": "^1.4.9",
+    "kue-ui": "^0.1.0",
+    "readline-sync": "^1.4.9"
   }
 }
