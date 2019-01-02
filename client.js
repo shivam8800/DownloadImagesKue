@@ -12,4 +12,7 @@ let file = readline.question("Write URL of Image which you wants to downloads ? 
 
 let job = queue.create('download', {
 	file: file
-}).save();
+})
+	.attempts(3) //if job fails retry in 3 times
+	.backoff({ delay: 60 * 1000 }) // wait 60s before retry
+	.save();
