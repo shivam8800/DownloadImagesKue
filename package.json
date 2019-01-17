@@ -9,7 +9,10 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "bell": "^9.4.0",
+    "dotenv": "^6.2.0",
     "express": "^4.16.4",
+    "hapi": "^17.8.1",
     "image-downloader": "^3.4.2",
     "kue": "^0.11.6",
     "kue-ui": "^0.1.0",
